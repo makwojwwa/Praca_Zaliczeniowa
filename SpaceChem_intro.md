@@ -5,8 +5,10 @@ How to beat "SpaceChem" - a visual programming puzzle game <!-- omit in TOC -->
 The game reflects the situation of the newly appointed Reaction Engineer: the player receives scarce information about the available capabilities of the reactor and has to figure almost everything out on their own. To solve levels, the player uses a visual programming language, which can be learned easily by beginners who have never programmed before. As the game progresses, the reactors become more advanced and offer more commands so that more complex reactions - i.e. programs - can be developed.
 # Game mechanics
 ## Reactor structure
-## Key commands
+## Basic commands
+## Assignments
 
 # Some interesting levels
 
 # Rules and tips
+# Troubleshooting
