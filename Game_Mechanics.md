@@ -23,14 +23,21 @@ The arrows force the waldos to change their direction in the reactor.
 ## Sync
 "SYNC" is useful for avoiding collisions and making sure that both waldos execute their respective algorithms in the proper sequence. You have to place one "SYNC" for the red waldo and one for the blue one. The first waldo reaching its "SYNC" will stop there and wait until the other waldo reaches its "SYNC". Once this happens, the first waldo starts running again.
 # Advanced instructions
+## Branches
+### Control
+This instruction allows you to redirect a waldo manually to respond to the situation outside the reactor. "Branch - Control" is available only in Defense Assignments.
+### Sense Atom
+This instruction allows you to redirect a waldo automatically when a Sensor detects a specified element. "Branch - Sense Atom" is useful when various atoms/molecules are input and need to be differentiated and sorted respectively.
 # Special objects
 ## Bonders
 There are four bonders in a reactor by default, although in some scenarios only two are available. Their task is to create or remove a bond between atoms placed on adjacent bonders. When the "BOND" instruction is executed, it affects all bonders at the same time.
 ## Sensors
+Sensors are tasked with detecting the element atom passing over them. When the specified element passes over the sensor, the corresponding "Branch - Sense Atom" instruction" is activated and enables a waldo to be redirected.
 ## Fusion plates
 # Assignments
 ## Reaction assignments
 These are the basic assignments in the game. Their aim is to program a single reactor so that atoms or molecules can be input and modified in such a manner by the waldos that the required atoms or molecules can be output.
 ## Production assignments
-These assignments require storage tanks or harvesters, one or more reactors, and cargo freighters. These objects are connected by pipelines. Storage tanks or harvesters supply molecules to reactors via pipelines. Reactors are connected to further reactors or cargo freighters via pipelines.
+These assignments require storage tanks or harvesters, one or more reactors, cargo freighters and occasionally recyclers. These objects are connected by pipelines. Storage tanks or harvesters supply molecules to reactors via pipelines. Reactors are connected to further reactors or cargo freighters via pipelines.
 ## Defense assignments
+These assignments require defending the control center from various threats, from rogue machinery to monsters. Only reactors and storage tanks are available in such assignments. However, they offer unique instructions: Branch Control, which allow the player to manually redirect the waldos to respond the situation outside.
