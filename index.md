@@ -9,7 +9,7 @@ The game reflects the situation of the newly appointed *Reaction Engineer*: the 
 ## Basic instructions
 ## Assignments
 
-# Some interesting levels
+# Some tricky levels
 
 [Rules and tips](Rules_And_Tips.md)
 # Troubleshooting
