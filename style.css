@@ -1,0 +1,9 @@
+h1 {font-family: Arial, Helvetica, sans-serif;}
+h2 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+p {font-family: Arial, Helvetica, sans-serif;}
+td {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: yellow;}
+th {background-color: blanchedalmond;}
+thead {background-color: blanchedalmond;}
+.solution {color: green; font-size: 1.3em;}
+.problem {color: red; font-size: 1.3em;}
+.cause {color: blue; font-size: 1.3em;}

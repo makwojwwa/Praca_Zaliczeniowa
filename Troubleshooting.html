@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Solutions to most common problems">
+        <title>Troubleshooting</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <article>
+            <header>
+                <h1>Troubleshooting</h1>
+            </header>
+                <section>
+                    <p>This section presents the most commonly occurring problems with gameplay, the most probable causes and suggested solutions.
+                    </p>
+                </section>
+                <section>
+                    <h2>Bonding</h2>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="problem">Problem</th>
+                            <th class="cause">Possible cause</th>
+                            <th class="solution">Solution</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <th rowspan="2" scope="row">Bonds are still present</th>
+                            <td>Too few BOND- instructions</td>
+                            <td>Add more BOND- instructions</td>
+                        </tr>
+                        <tr>
+                            <td>Bonders do not support bond removal</td>
+                            <td>Replace reactor with Disassembly Reactor</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" scope="row">Bonds are not added</th>
+                            <td>Bonders do not support bond addition</td>
+                            <td>Replace reactor with Assembly Reactor</td>
+                        </tr>
+                        <tr>
+                            <td>No more bonds can be added to this particular atom</td>
+                            <td>Remove some bonds earlier or get a different atom</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bonds are added not between desired atoms when all bonders are placed adjacent to one another</th>
+                            <td>Bonder priority was triggered</td>
+                            <td>Check bonder numbers and switch their places to achieve required bonding</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2>Outputting</h2>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="problem">Problem</th>
+                            <th class="cause">Possible cause</th>
+                            <th class="solution">Solution</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <th rowspan="4" scope="row">Molecule is not output</th>
+                            <td>Molecule was not dropped</td>
+                            <td>Drop molecule</td>
+                        </tr>
+                        <tr>
+                        <td>Molecule was not dropped entirely in output area</td>
+                        <td>Drop molecule entirely in output area</td>
+                        </tr>
+                        <tr>
+                            <td>Molecule was dropped in inactive output area</td>
+                            <td>Drop molecule in active output area</td>
+                        </tr>
+                        <tr>
+                            <td>Wrong instruction was placed (e.g. OUT ψ instead of OUT ω)</td>
+                            <td>Place correct instruction</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2>Collisions</h2>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="problem">Problem</th>
+                            <th class="cause">Possible cause</th>
+                            <th class="solution">Solution</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <th rowspan="4" scope="row">Atoms collide inside reactor</th>
+                            <td rowspan="2">Waldos are on collision course</td>
+                            <td>Re-route waldos</td>
+                        </tr>
+                        <tr>
+                            <td>If re-routing is impossible, add SYNC instructions to change timing of each waldo</td>
+                        </tr>
+                        <tr>
+                            <td>Atoms/molecules were not dropped</td>
+                            <td>Drop atoms/molecules at required places</td>
+                        </tr>
+                        <tr>
+                            <td>Jam in downstream reactor</td>
+                            <td>Remove jam by extending relevant pipeline</td>
+                        </tr>
+                    </table>
+                </section>
+        </article>
+    </body>
+</html>
