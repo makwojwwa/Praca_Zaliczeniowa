@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Game mechanics">
+        <title>Game mechanics</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Game Mechanics</h1>
+        </header>
+        <section>
+            <h2 id="reactor_structure">Reactor structure</h2>
+            <p>The reactor is composed of three parts: the <em>input area</em> to the left, the <em>output area</em> to the right and the area between them. In certain levels the input and output areas are sub-divided into α and β inputs and ψ and ω outputs, respectively.<br>
+            Below the reactor are various instructions that can be used by the player. They are described in detail in <a href="#basic_instructions">Basic instructions</a>. Simply click the required instruction and drag it to the desired location in the reactor.<br>
+            The player carries out various reactions with the use of <em>waldos</em>. There is a red and a blue one, so they can execute two different algorithms at the same time. The goal is to create paths for the waldos with the use of the available instructions so that the required chemical compound can be formed and output in the right area.<br>
+            The reactor most often contains also special objects, which are required for carrying out the reaction or executing the algorithm. These are bonder plates, sensors and fusion plates. They are described in detail in <a href="#special_objects">Special objects</a>.
+            </p>
+        </section>
+        <section>
+            <h2 id="basic_instructions">Basic instructions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Instruction</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                            <th scope="row" class="two_col">Start</th>
+                            <td>The first and the most important instruction of all. It marks the place where the waldo begins executing the algorithm.</td>
+                        </tr>
+                        <tr>
+                           <th scope="row" class="two_col">Input</th>
+                           <td>This instruction makes an atom or molecule appear in the input area, at the exact place as indicated in the small grid presented to the left of the reactor grid.</td>
+                         </tr>
+                        <tr>
+                            <th scope="row" class="two_col">Output</th>
+                            <td>This instruction makes an atom or molecule disappear in the output area.</td>
+                         </tr>
+                        <tr>
+                            <th scope="row" class="two_col">Grab/Drop</th>
+                            <td>There are three variants of the "GRAB DROP" button. The default one makes the waldo grab or drop an atom or molecule located exactly at the place where the instruction is located. The button can be switched to either "GRAB" or "DROP" so that the waldo can perform only one operation (grabbing or dropping) instead of the possibility to perform both.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="two_col">Rotate molecule</th>
+                            <td>This instruction is responsible for rotating the molecule grabbed by the waldo 90 degrees clockwise or counter-clockwise.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="two_col">Bond+/Bond-</th>
+                            <td>These instructions are variants of the "BOND +" button. "BOND +" creates a bond between atoms that are present on adjacent bonders, whereas "BOND -" destroys a bond between atoms that are present on adjacent bonders. The instruction need not be placed directly on bonders.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="two_col">Arrow instructions</th>
+                            <td>The arrows force the waldos to change their direction in the reactor.</td>                        </tr>
+                        <tr>
+                            <th scope="row" class="two_col">Sync</th>
+                            <td>"SYNC" is useful for avoiding collisions and making sure that both waldos execute their respective algorithms in the proper sequence. You have to place one "SYNC" for the red waldo and one for the blue one. The first waldo reaching its "SYNC" will stop there and wait until the other waldo reaches its "SYNC". Once this happens, the first waldo starts running again.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        </section>
+        <section>
+            <h2 id="advanced_instructions">Advanced instructions</h2>
+            <h3>Branches</h3>
+### Control
+This instruction allows you to redirect a waldo manually to respond to the situation outside the reactor. "Branch - Control" is available only in Defense Assignments.
+### Sense Atom
+This instruction allows you to redirect a waldo automatically when a Sensor detects a specified element. "Branch - Sense Atom" is useful when various atoms/molecules are input and need to be differentiated and sorted respectively.
+        </section>
+        <section>
+            <h2 id="special_objects">Special objects</h2>
+## Bonders
+There are four bonders in a reactor by default, although in some scenarios only two are available. Their task is to create or remove a bond between atoms placed on adjacent bonders. When the "BOND" instruction is executed, it affects all bonders at the same time.
+## Sensors
+Sensors are tasked with detecting the element atom passing over them. When the specified element passes over the sensor, the corresponding "Branch - Sense Atom" instruction" is activated and enables a waldo to be redirected.
+## Fusion plates
+        </section>    
+        <section>
+            <h2>Assignments</h2>
+## Reaction assignments
+These are the basic assignments in the game. Their aim is to program a single reactor so that atoms or molecules can be input and modified in such a manner by the waldos that the required atoms or molecules can be output.
+## Production assignments
+These assignments require storage tanks or harvesters, one or more reactors, cargo freighters and occasionally recyclers. These objects are connected by pipelines. Storage tanks or harvesters supply molecules to reactors via pipelines. Reactors are connected to further reactors or cargo freighters via pipelines.
+## Defense assignments
+These assignments require defending the control center from various threats, from rogue machinery to monsters. Only reactors and storage tanks are available in such assignments. However, they offer unique instructions: Branch Control, which allow the player to manually redirect the waldos to respond the situation outside.
+        </section>
+    </body>
+</html>
