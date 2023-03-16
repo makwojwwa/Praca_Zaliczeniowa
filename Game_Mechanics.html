@@ -12,10 +12,10 @@
         </header>
         <section>
             <h2 id="reactor_structure">Reactor structure</h2>
-            <p>The reactor is composed of three parts: the <em>input area</em> to the left, the <em>output area</em> to the right and the area between them. In certain levels the input and output areas are sub-divided into α and β inputs and ψ and ω outputs, respectively.<br>
-            Below the reactor are various instructions that can be used by the player. They are described in detail in <a href="#basic_instructions">Basic instructions</a>. Simply click the required instruction and drag it to the desired location in the reactor.<br>
-            The player carries out various reactions with the use of <em>waldos</em>. There is a red and a blue one, so they can execute two different algorithms at the same time. The goal is to create paths for the waldos with the use of the available instructions so that the required chemical compound can be formed and output in the right area.<br>
-            The reactor most often contains also special objects, which are required for carrying out the reaction or executing the algorithm. These are bonder plates, sensors and fusion plates. They are described in detail in <a href="#special_objects">Special objects</a>.
+            <p>The <em class="term">reactor</em> is composed of three parts: the <em class="term">input area</em> to the left, the <em class="term">output area</em> to the right and the area between them. In certain levels the input and output areas are sub-divided into α and β inputs and ψ and ω outputs, respectively.</p>
+            <p>Below the reactor are various instructions that can be used by the player. They are described in detail in <a href="#basic_instructions">Basic instructions</a>. Simply click the required instruction and drag it to the desired location in the reactor.</p>
+            <p>The player carries out various reactions with the use of <em class="term">waldos</em>. There is a red and a blue one, so they can execute two different algorithms at the same time. The goal is to create paths for the waldos with the use of the available instructions so that the required chemical compound can be formed and output in the correct area.</p>
+            <p>The reactor most often contains also special objects, which are required for carrying out the reaction or executing the algorithm. These are bonder plates, sensors and fusion lasers. They are described in detail in <a href="#special_objects">Special objects</a>.
             </p>
         </section>
         <section>
@@ -66,27 +66,74 @@
         <section>
             <h2 id="advanced_instructions">Advanced instructions</h2>
             <h3>Branches</h3>
-### Control
-This instruction allows you to redirect a waldo manually to respond to the situation outside the reactor. "Branch - Control" is available only in Defense Assignments.
-### Sense Atom
-This instruction allows you to redirect a waldo automatically when a Sensor detects a specified element. "Branch - Sense Atom" is useful when various atoms/molecules are input and need to be differentiated and sorted respectively.
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Instruction</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="two_col">Control</th>
+                            <td>This instruction allows you to redirect a waldo manually to respond to the situation outside the reactor. "Branch - Control" is available only in Defense Assignments.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="two_col">Sense Atom</th>
+                            <td>This instruction allows you to redirect a waldo automatically when a Sensor detects a specified element. "Branch - Sense Atom" is useful when various atoms/molecules are input and need to be differentiated and sorted respectively.</td>
+                        </tr>
+                    </tbody>
+                </table>
         </section>
         <section>
             <h2 id="special_objects">Special objects</h2>
-## Bonders
-There are four bonders in a reactor by default, although in some scenarios only two are available. Their task is to create or remove a bond between atoms placed on adjacent bonders. When the "BOND" instruction is executed, it affects all bonders at the same time.
-## Sensors
-Sensors are tasked with detecting the element atom passing over them. When the specified element passes over the sensor, the corresponding "Branch - Sense Atom" instruction" is activated and enables a waldo to be redirected.
-## Fusion plates
+            <table>
+                <thead>
+                    <tr>
+                        <th>Object</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="two_col">Bonders</th>
+                        <td>There are four bonders in a reactor by default, although in some scenarios only two are available. Their task is to create or remove a bond between atoms placed on adjacent bonders. When the "BOND" instruction is executed, it affects all bonders at the same time.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="two_col">Sensors</th>
+                        <td>Sensors are tasked with detecting the element atom passing over them. When the specified element passes over the sensor, the corresponding "Branch - Sense Atom" instruction" is activated and enables a waldo to be redirected.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="two_col">Fusion lasers</th>
+                        <td>Fusion lasers enable the player to perform an atomic fusion. Two atoms are required for this process: one needs to be placed on the right side of the object, while the other should be placed on the left side of the object. Once the two atoms are placed as described above, the "FUSE" instruction triggers the laser, which pushes the left atom towards the right one to execute atomic fusion. After this process a completely new atom is formed on the right side of the object. Its atomic number is the result of addition of the atomic numbers of the two atoms applied in the fusion.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>    
         <section>
             <h2>Assignments</h2>
-## Reaction assignments
-These are the basic assignments in the game. Their aim is to program a single reactor so that atoms or molecules can be input and modified in such a manner by the waldos that the required atoms or molecules can be output.
-## Production assignments
-These assignments require storage tanks or harvesters, one or more reactors, cargo freighters and occasionally recyclers. These objects are connected by pipelines. Storage tanks or harvesters supply molecules to reactors via pipelines. Reactors are connected to further reactors or cargo freighters via pipelines.
-## Defense assignments
-These assignments require defending the control center from various threats, from rogue machinery to monsters. Only reactors and storage tanks are available in such assignments. However, they offer unique instructions: Branch Control, which allow the player to manually redirect the waldos to respond the situation outside.
+            <table>
+                <thead>
+                    <tr>
+                        <th>Assignment</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="two_col">Research assignments</th>
+                        <td>These are the basic assignments in the game. Their aim is to program a single reactor so that atoms or molecules can be input and modified in such a manner by the waldos that the required atoms or molecules can be output.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="two_col">Production assignments</th>
+                        <td>These assignments require storage tanks or harvesters, one or more reactors, cargo freighters and occasionally recyclers. These objects are connected by pipelines. Storage tanks or harvesters supply molecules to reactors via pipelines. Reactors are connected to further reactors or cargo freighters via pipelines.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="two_col">Defense assignments</th>
+                        <td>These assignments require defending the control center from various threats, from rogue machinery to monsters. Only reactors and storage tanks are available in such assignments. However, they offer unique instructions: Branch Control, which allow the player to manually redirect the waldos to respond the situation outside.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </body>
 </html>
