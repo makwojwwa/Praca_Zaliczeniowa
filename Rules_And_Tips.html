@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Rules and tips related to gameplay">
+        <title>Rules and tips</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rules and tips</h1>
+        </header>
+        <section>
+            <h2>General</h2>
+            <ul>
+               <li>You can move the "START" instruction wherever you want. You can change the direction of the "START" instruction. You don't have to end your loop on the "START" instruction.</li>
+               <li>You don't have to use both <em class="term">waldos</em> - sometimes one is able to execute the algorithm.</li>
+               <li>It is a good idea to place <em class="term">bonders</em> on the input.</li>
+               <li>The actual shape of the molecule to be output is not important.</li>
+               <li>Each <em class="term">waldo</em> can move through a single grid cell from two directions, at the right angle.</li>
+               <li><em class="term">Bonders</em> have numbers, which give them priority. This means that e.g. bonds will be created first between <em class="term">bonder 1</em> and <em class="term">bonder 2</em> than between <em class="term">bonder 1</em> and <em class="term">bonder 3</em> if all of them are adjacent to one another. This is very important because sometimes you will want to create a bond on a specific side of an atom rather than on a different side.</li>
+            </ul>
+        <section>
+                <h2>Sensing assignments</h2>
+                <ul>
+                   <li>You don't have to place <em class="term">sensors</em> directly where atoms/molecules will be input.</li>
+                   <li>When planning your sensing program, first think of a "default" loop and only then think where sensing branches can be started and where they should end.</li>  
+                </ul>
+        </section>
+        <section>
+            <h2>Production assignments</h2>
+                <ul>
+                    <li>The molecule output in a <em class="term">reactor</em> will appear in the next <em class="term">reactor</em> in the exact position on the grid in which it was output. Clever planning of the position of output molecules can make it easier to create new molecules in the downstream <em class="term">reactors</em>.</li>
+                    <li>Molecules need some cycles to reach the reactor after leaving the storage or the previous <em class="term">reactor</em>. Sometimes you have to adjust the length of the pipelines to avoid jams.</li>
+                    <li>Plan in advance which intermediate molecules you want to create. This will help you decide how many <em class="term">reactors</em> and in what configuration should be used.</li>
+                </ul> 
+        </section>
+        <section>
+            <h2>Defense assignments</h2>
+        </section>
+    </body>
+</html>
