@@ -19,12 +19,16 @@
                <li>The actual shape of the molecule to be output is not important.</li>
                <li>Each <em class="term">waldo</em> can move through a single grid cell from two directions, at the right angle.</li>
                <li><em class="term">Bonders</em> have numbers, which give them priority. This means that e.g. bonds will be created first between <em class="term">bonder 1</em> and <em class="term">bonder 2</em> than between <em class="term">bonder 1</em> and <em class="term">bonder 3</em> if all of them are adjacent to one another. This is very important because sometimes you will want to create a bond on a specific side of an atom rather than on a different side.</li>
+               <li>Always do the maths before solving a level. Add the quantities of all particular atoms on the input side and on the output side. This way you will know in advance how many input molecules of each kind you need to output one target molecule. Or maybe you can create two output molecules at the same time?</li>
+               <li>Although both waldos execute instructions at the same time, the red <em class="term">waldo</em> has priority over the blue <em class="term">waldo</em>. This means that, for example, when both <em class="term">waldos</em> run over the same grid cell with the same "GRAB" instruction at the same time, the atom/molecule will be grabbed by the red <em class="term">waldo</em>.</li>
             </ul>
         <section>
                 <h2>Sensing assignments</h2>
                 <ul>
                    <li>You don't have to place <em class="term">sensors</em> directly where atoms/molecules will be input.</li>
-                   <li>When planning your sensing program, first think of a "default" loop and only then think where sensing branches can be started and where they should end.</li>  
+                   <li>When planning your sensing program, first think of a "default" loop and only then think where sensing branches can be started and where they should end.</li>
+                   <li>Try to find a spot where you can always execute the same required instruction no matter which molecule is input, for example "GRAB". Thanks to that you will need fewer or smaller branches.</li>
+                   <li>Try to notice any patterns and similarities in the molecules which will be input.</li>
                 </ul>
         </section>
         <section>
@@ -37,6 +41,10 @@
         </section>
         <section>
             <h2>Defense assignments</h2>
+                <ul>
+                    <li>Although they are designed to be solved by applying branch control instructions, some defense assignments can be beaten without branching.</li>
+                    <li>Reactor control buttons can be pushed both inside the reactor and in the overall level view.</li>
+                </ul>
         </section>
     </body>
 </html>
